@@ -54,3 +54,121 @@
   --transition-shadow: box-shadow var(--transition-normal);
   --transition-opacity: opacity var(--transition-normal);
 }
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+ul {
+  list-style-type: none;
+}
+
+body {
+  background: var(--background-color);
+  font-size: 16px;
+  font-family: var(--font-base);
+}
+.header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: var(--font-family);
+  font-size: var(--font-small);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--spacing-sm), var(--spacing-md);
+  min-height: 60px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: var(--spacing-sm);
+}
+.header-logo img {
+  height: 25px;
+}
+.header-location {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+.location-icon img {
+  width: 24px;
+}
+.location-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header-search {
+  display: flex;
+  flex: 1;
+  margin: 0 var(--spacing-md);
+}
+
+.header-search input {
+  flex: 1;
+  padding: var(--spacing-sm);
+  border: none;
+}
+
+.header-search button {
+  background: var(--accent-color);
+  border: none;
+  padding: 0 var(--spacing-md);
+  cursor: pointer;
+}
+
+.header-language,
+.header-account,
+.header-orders,
+.header-cart {
+  margin-inline: var(--spacing-sm);
+  transition: var(--transition-transform);
+}
+
+.header-language:hover,
+.header-account:hover,
+.header-orders:hover,
+.header-cart:hover {
+  cursor: pointer;
+  transform: translateY(2px);
+}
+
+.header-bottom {
+  display: flex;
+  background-color: var(--secondary-color);
+  padding: var(--spacing-xs) var(--spacing-md);
+  height: 40px;
+}
+
+.header-bottom .nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-bottom .nav-links a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: var(--font-small);
+}
+
+body > header > nav > ul > li:nth-child(1){
+    border: 1px solid var(--black-color);
+    padding: var(--spacing-sm);
+    transition: var(--transition-border);
+}
+
+body > header > nav > ul > li:nth-child(1):hover{
+    border: 1px solid var(--accent-color);
+    padding: var(--spacing-sm);
+    cursor: pointer;
+}
