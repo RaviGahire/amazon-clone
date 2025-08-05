@@ -1,0 +1,158 @@
+[
+    {
+        "city": "Mumbai",
+        "pincode": "400001"
+    },
+    {
+        "city": "Delhi",
+        "pincode": "110001"
+    },
+    {
+        "city": "Bengaluru",
+        "pincode": "560001"
+    },
+    {
+        "city": "Hyderabad",
+        "pincode": "500001"
+    },
+    {
+        "city": "Chennai",
+        "pincode": "600001"
+    },
+    {
+        "city": "Kolkata",
+        "pincode": "700001"
+    },
+    {
+        "city": "Pune",
+        "pincode": "411001"
+    },
+    {
+        "city": "Ahmedabad",
+        "pincode": "380001"
+    },
+    {
+        "city": "Jaipur",
+        "pincode": "302001"
+    },
+    {
+        "city": "Lucknow",
+        "pincode": "226001"
+    },
+    {
+        "city": "Chandigarh",
+        "pincode": "160001"
+    },
+    {
+        "city": "Bhopal",
+        "pincode": "462001"
+    },
+    {
+        "city": "Indore",
+        "pincode": "452001"
+    },
+    {
+        "city": "Nagpur",
+        "pincode": "440001"
+    },
+    {
+        "city": "Patna",
+        "pincode": "800001"
+    },
+    {
+        "city": "Ranchi",
+        "pincode": "834001"
+    },
+    {
+        "city": "Thiruvananthapuram",
+        "pincode": "695001"
+    },
+    {
+        "city": "Kochi",
+        "pincode": "682001"
+    },
+    {
+        "city": "Coimbatore",
+        "pincode": "641001"
+    },
+    {
+        "city": "Madurai",
+        "pincode": "625001"
+    },
+    {
+        "city": "Mysuru",
+        "pincode": "570001"
+    },
+    {
+        "city": "Mangalore",
+        "pincode": "575001"
+    },
+    {
+        "city": "Guwahati",
+        "pincode": "781001"
+    },
+    {
+        "city": "Bhubaneswar",
+        "pincode": "751001"
+    },
+    {
+        "city": "Raipur",
+        "pincode": "492001"
+    },
+    {
+        "city": "Surat",
+        "pincode": "395003"
+    },
+    {
+        "city": "Vadodara",
+        "pincode": "390001"
+    },
+    {
+        "city": "Varanasi",
+        "pincode": "221001"
+    },
+    {
+        "city": "Prayagraj",
+        "pincode": "211001"
+    },
+    {
+        "city": "Kanpur",
+        "pincode": "208001"
+    },
+    {
+        "city": "Agra",
+        "pincode": "282001"
+    },
+    {
+        "city": "Amritsar",
+        "pincode": "143001"
+    },
+    {
+        "city": "Ludhiana",
+        "pincode": "141001"
+    },
+    {
+        "city": "Jalandhar",
+        "pincode": "144001"
+    },
+    {
+        "city": "Dehradun",
+        "pincode": "248001"
+    },
+    {
+        "city": "Shimla",
+        "pincode": "171001"
+    },
+    {
+        "city": "Panaji",
+        "pincode": "403001"
+    },
+    {
+        "city": "Gangtok",
+        "pincode": "737101"
+    },
+    {
+        "city": "Shillong",
+        "pincode": "793001"
+    }
+]

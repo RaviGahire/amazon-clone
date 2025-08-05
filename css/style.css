@@ -10,6 +10,7 @@
   --accent-color: #febd69; /* Amazon yellow */
   --accent-hover: #f3a847; /* Hover yellow */
   --background-color: #e3e6e6; /* Page background */
+  --modal-bg: #6b7280;
   --white-color: #ffffff;
   --black-color: #000000;
   --text-color: #111111;
@@ -28,6 +29,7 @@
   /* Font */
   --font-family: "Amazon Ember", Arial, sans-serif;
   --font-small: 0.85rem;
+  --font-extra-small: 12px;
   --font-base: 1rem;
   --font-large: 1.2rem;
 
@@ -95,6 +97,12 @@ body {
   display: flex;
   align-items: center;
   min-height: 60px;
+  border: 1px solid var(--primary-color);
+  transition: var(--transition-border);
+}
+.header-location:hover {
+  border: 1px solid var(--white-color);
+  cursor: pointer;
 }
 .location-icon img {
   width: 24px;
@@ -104,6 +112,119 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+/* Address Modal */
+.address-modal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  top: 20px;
+  bottom: 20px;
+  width: 375px;
+  height: 500px;
+  background: var(--modal-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.modal-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: var(--secondary-color);
+  justify-content: space-between;
+  padding-inline: var(--spacing-sm);
+}
+.modal-header h2 {
+  font-size: var(--font-small);
+  font-weight: 300;
+}
+.modal-header img {
+  transition: var(--transition-transform);
+}
+.modal-header img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.modal-body {
+  padding: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+.modal-body p {
+  font-size: var(--font-extra-small);
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+.modal-body address {
+  border: 1px solid var(--white-color);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  transition: var(--transition-color), var(--transition-bg);
+}
+.modal-body address:hover {
+  background-color: var(--background-color);
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.modal-footer {
+  padding: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+.modal-footer a {
+  color: var(--accent-color);
+  transition: var(--transition-slow);
+}
+.modal-footer a:hover {
+  text-decoration: underline;
+}
+.footer-lines {
+  /* background: #000; */
+  margin-top: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+.modal-line {
+  width: 90px;
+  height: 1px;
+  background-color: var(--background-color);
+}
+.footer-pincode {
+  margin-block: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.footer-pincode input {
+  width: 80%;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.footer-pincode button {
+  padding-inline: var(--spacing-md);
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-bg);
+}
+
+.footer-pincode button:hover {
+  background: var(--btn-hover-bg);
+  color: var(--link-color);
+}
+
+/*=================Address Modal End ======================*/
+
+
+
 .header-search {
   display: flex;
   flex: 1;
@@ -161,14 +282,14 @@ body {
   font-size: var(--font-small);
 }
 
-body > header > nav > ul > li:nth-child(1){
-    border: 1px solid var(--black-color);
-    padding: var(--spacing-sm);
-    transition: var(--transition-border);
+body > header > nav > ul > li:nth-child(1) {
+  border: 1px solid var(--black-color);
+  padding: var(--spacing-sm);
+  transition: var(--transition-border);
 }
 
-body > header > nav > ul > li:nth-child(1):hover{
-    border: 1px solid var(--accent-color);
-    padding: var(--spacing-sm);
-    cursor: pointer;
+body > header > nav > ul > li:nth-child(1):hover {
+  border: 1px solid var(--accent-color);
+  padding: var(--spacing-sm);
+  cursor: pointer;
 }
