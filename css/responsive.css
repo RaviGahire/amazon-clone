@@ -78,6 +78,11 @@
     > span:nth-child(2) {
     font-size: 10px;
   }
+
+  /* Language Modal */
+  .language-modal {
+    top: 105px;
+  }
 }
 
 /* Small Devices (Phones ≥ 576px) */

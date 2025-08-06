@@ -261,14 +261,43 @@ body {
   transition: var(--transition-transform);
 }
 
-.header-language:hover,
+/* .header-language:hover, */
 .header-account:hover,
 .header-orders:hover,
 .header-cart:hover {
   cursor: pointer;
   transform: translateY(2px);
 }
+.header-language {
+  cursor: pointer;
+}
+.language-modal {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  background-color: var(--modal-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  transform: scale(0);
+  transition: var(--transition-transform);
+}
+.header-language:hover:hover .language-modal {
+  transform: scale(1);
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+  transition: var(--transition-transform);
+}
+.checkbox:hover,
+.checkbox input {
+  transform: translate(2px);
+  cursor: pointer;
+}
 
+/*===================Header-bottom================= */
 .header-bottom {
   display: flex;
   background-color: var(--secondary-color);
@@ -302,4 +331,3 @@ body > header > nav > ul > li:nth-child(1):hover {
   padding: var(--spacing-sm);
   cursor: pointer;
 }
-
