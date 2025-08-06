@@ -1,0 +1,185 @@
+/* Extra Small Devices (Phones < 576px) */
+@media (max-width: 575px) {
+  .header-logo img {
+    height: 16px;
+  }
+  .header-search {
+    display: none;
+  }
+  .location-icon img {
+    width: 16px;
+    margin-right: 4px;
+  }
+  .small-text {
+    display: none;
+  }
+  .bold-text {
+    font-size: 12px;
+  }
+
+  /* Nav bar */
+  .header-bottom {
+    position: relative;
+  }
+  .header-bottom .nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    padding: 1rem;
+  }
+
+  .nav-toggle-btn {
+    display: none;
+    cursor: pointer;
+  }
+
+  .nav-toggle-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 220px;
+    height: 100vh;
+    background: #131921;
+    color: white;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    transition: 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-close-btn {
+    align-self: flex-end;
+
+    cursor: pointer;
+  }
+
+  .nav-links li a {
+    color: white;
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  /* Modal */
+
+  .address-modal {
+    top: 60px;
+    max-width: 350px;
+  }
+  div.address-modal.active
+    > div.modal-footer
+    > div.footer-lines
+    > span:nth-child(2) {
+    font-size: 10px;
+  }
+}
+
+/* Small Devices (Phones ≥ 576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header-search {
+    display: none;
+  }
+  .header-search {
+    display: none;
+  }
+  .location-icon img {
+    width: 16px;
+    margin-right: 4px;
+  }
+  .small-text {
+    display: none;
+  }
+  .bold-text {
+    font-size: 12px;
+  }
+
+  .header-bottom {
+    position: relative;
+  }
+  .header-bottom .nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    padding: 1rem;
+  }
+
+  .nav-toggle-btn {
+    display: none;
+    cursor: pointer;
+  }
+
+  .nav-toggle-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 220px;
+    height: 100vh;
+    background: #131921;
+    color: white;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    transition: 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-close-btn {
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  .nav-links li a {
+    color: white;
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+/* Modal */
+  /* Modal */
+
+  .address-modal {
+    top: 60px;
+    max-width: 350px;
+  }
+  div.address-modal.active
+    > div.modal-footer
+    > div.footer-lines
+    > span:nth-child(2) {
+    font-size: 10px;
+  }
+
+
+
+}
+
+/* Medium Devices (Tablets ≥ 768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Navbar */
+  .nav-close-btn {
+    display: none;
+  }
+}
+
+/* Large Devices (Desktops ≥ 992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra Large Devices (Large Desktops ≥ 1200px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/* 2K / Extra Extra Large Devices (≥ 1400px) */
+@media (min-width: 1400px) {
+}

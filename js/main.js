@@ -25,3 +25,25 @@ defaultAddress.forEach((add) => {
 
 })
 modalCloseBtn.addEventListener('click', hideModal);
+
+// Navbar
+const navToggleBtn = document.querySelector('.nav-toggle-btn');
+const navLinks = document.querySelector('.nav-links');
+const navCloseBtn = document.querySelector('.nav-close-btn');
+
+// Open menu
+navToggleBtn.addEventListener('click', () => {
+  navLinks.classList.add('active');
+});
+
+// Close menu
+navCloseBtn.addEventListener('click', () => {
+  navLinks.classList.remove('active');
+});
+
+// Optional: close when clicking outside
+document.addEventListener('click', (e) => {
+  if (!navLinks.contains(e.target) && !navToggleBtn.contains(e.target)) {
+    navLinks.classList.remove('active');
+  }
+});
