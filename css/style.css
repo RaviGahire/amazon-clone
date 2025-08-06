@@ -281,7 +281,7 @@ body {
   transform: scale(0);
   transition: var(--transition-transform);
 }
-.header-language:hover:hover .language-modal {
+.header-language:hover .language-modal {
   transform: scale(1);
 }
 .checkbox {
@@ -295,6 +295,79 @@ body {
 .checkbox input {
   transform: translate(2px);
   cursor: pointer;
+}
+
+/* User Account modal */
+.header-account {
+  cursor: pointer;
+}
+.account-container {
+  position: relative;
+}
+.account-modal {
+  position: absolute;
+  width: 400px;
+  top: 18px;
+  right: -50px;
+  background-color: var(--modal-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  transform: scale(0);
+  transition: var(--transition-transform);
+}
+.modal-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--accent-hover);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  background: #e0f2fe;
+}
+.modal-title p {
+  color: var(--secondary-color);
+}
+
+.manage-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+.manage-profile a {
+  color: var(--secondary-color);
+}
+.manage-profile a:hover {
+  text-decoration: underline;
+}
+.account-modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--spacing-md);
+}
+.account-modal-body h2 {
+  font-size: var(--font-base);
+  margin-bottom: var(--spacing-xs);
+}
+.modal-left-side li {
+  margin-top: var(--spacing-sm);
+}
+.modal-right-side {
+  height: 300px;
+}
+.modal-left-side {
+  height: 300px;
+}
+.modal-right-side li {
+  margin-top: var(--spacing-sm);
+}
+
+.modal-right-side li:hover,
+.madal-left-side li:hover {
+  text-decoration: underline;
+}
+.header-account:hover .account-modal {
+  transform: scale(1);
 }
 
 /*===================Header-bottom================= */
