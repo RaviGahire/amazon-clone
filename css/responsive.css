@@ -146,7 +146,7 @@
     padding: 0.5rem 0;
   }
 
-/* Modal */
+  /* Modal */
   /* Modal */
 
   .address-modal {
@@ -159,9 +159,6 @@
     > span:nth-child(2) {
     font-size: 10px;
   }
-
-
-
 }
 
 /* Medium Devices (Tablets ≥ 768px) */
@@ -174,12 +171,21 @@
 
 /* Large Devices (Desktops ≥ 992px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-close-btn {
+    display: none;
+  }
 }
 
 /* Extra Large Devices (Large Desktops ≥ 1200px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .nav-close-btn {
+    display: none;
+  }
 }
 
 /* 2K / Extra Extra Large Devices (≥ 1400px) */
 @media (min-width: 1400px) {
+  .nav-close-btn {
+    display: none;
+  }
 }

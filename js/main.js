@@ -47,3 +47,7 @@ document.addEventListener('click', (e) => {
     navLinks.classList.remove('active');
   }
 });
+
+fetch('https://dummyjson.com/products')
+.then(res => res.json())
+.then(console.log);
