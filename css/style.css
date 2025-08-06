@@ -114,9 +114,10 @@ body {
 }
 
 /* Address Modal */
+
 .address-modal {
   position: fixed;
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: auto;
   top: 20px;
@@ -126,7 +127,17 @@ body {
   background: var(--modal-bg);
   border-radius: var(--border-radius);
   overflow: hidden;
+  transition: var(--transition-slow);
 }
+
+
+.address-modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+
+
 .modal-header {
   width: 100%;
   display: flex;
