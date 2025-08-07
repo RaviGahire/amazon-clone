@@ -83,6 +83,14 @@
   .language-modal {
     top: 105px;
   }
+
+  /* Account modal */
+  .account-modal {
+    width: 350px;
+    top: 60px;
+    right: -82px;
+    font-size: 14px;
+  }
 }
 
 /* Small Devices (Phones ≥ 576px) */
