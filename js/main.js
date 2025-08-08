@@ -41,12 +41,7 @@ navCloseBtn.addEventListener('click', () => {
   navLinks.classList.remove('active');
 });
 
-// Optional: close when clicking outside
-document.addEventListener('click', (e) => {
-  if (!navLinks.contains(e.target) && !navToggleBtn.contains(e.target)) {
-    navLinks.classList.remove('active');
-  }
-});
+
 
 fetch('https://dummyjson.com/products')
 .then(res => res.json())
