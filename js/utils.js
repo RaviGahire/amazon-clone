@@ -12,7 +12,7 @@ async function validatePincodeFromJSON(userPincode) {
             alert(`✅ Valid Pincode! City: ${match.city}`)
             return true;
         } else {
-            alert("❌ Invalid Pincode. Plase Enter valid pincode");
+            alert("❌ Invalid Pincode. Please Enter valid pincode");
             return false;
         }
 
@@ -24,7 +24,7 @@ async function validatePincodeFromJSON(userPincode) {
 let pin = "";
 pincodeInput.addEventListener('input', (e) => {
     pin = e.target.value;
-    //   console.log("Current Pincode:", pin);
+    //console.log("Current Pincode:", pin);
 });
 applyBtn.addEventListener('click', () => {
     validatePincodeFromJSON(pin);
@@ -32,4 +32,6 @@ applyBtn.addEventListener('click', () => {
 });
 
 
+
+// carosule 
 
