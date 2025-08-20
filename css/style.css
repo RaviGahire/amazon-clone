@@ -244,7 +244,7 @@ body {
 
 .header-search input {
   /* flex: 1; */
-width: 100%;
+  width: 100%;
   padding: var(--spacing-sm);
   border: none;
 }
@@ -409,7 +409,7 @@ body > header > nav > ul > li:nth-child(1):hover {
 }
 
 /*=============Product========= */
-.product{
+.product {
   background: var(--accent-color);
   min-height: 90vh;
   width: 100%;
@@ -417,48 +417,91 @@ body > header > nav > ul > li:nth-child(1):hover {
   align-items: last baseline;
   justify-content: center;
   gap: 10px;
-  
 }
-.cards{
-  
+.cards {
   background: var(--background-color);
   width: 300px;
   min-height: 300px;
   margin-bottom: var(--spacing-md);
 }
 
-
 /* Order section */
 
-.your-orders-content-container{
+.your-orders-content-container {
   width: 100%;
   margin: var(--spacing-sm) 0;
 }
-.your-orders-content-container__conten{
+.your-orders-content-container__conten {
   width: 100%;
   max-width: 900px;
 
   margin: auto;
 }
-.breadcrumb{
+.breadcrumb {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
 }
-.breadcrumbs__crumb,a{
+.breadcrumbs__crumb,
+a {
   color: var(--black-color);
 }
-.breadcrumbs__crumb a:hover{
+.breadcrumbs__crumb a:hover {
   color: var(--link-hover);
   text-decoration: underline;
 }
-.breadcrumbs__crumb{
+.breadcrumbs__crumb {
   color: var(--black-color);
-
 }
-.breadcrumbs__crumb--divider{
+.breadcrumbs__crumb--divider {
   color: var(--secondary-color);
 }
-.breadcrumbs__crumb--current span{
-color: var(--link-hover);
+.breadcrumbs__crumb--current span {
+  color: var(--link-hover);
+}
+
+/* search bar */
+.orders-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--spacing-md);
+}
+.orders-wrapper h1 {
+  font-family: var(--font-family);
+  font-weight: var(--font-base);
+}
+.search-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-container {
+  width: 70%;
+  display: inline-flex;
+  gap: var(--spacing-sm);
+  border: 1px solid var(--modal-bg);
+  padding: 0 var(--spacing-xs);
+  border-radius: var(--border-radius);
+}
+.input-container:focus-within {
+  border: 1px solid var(--modal-bg);
+  outline: 2px solid var(--modal-bg);
+  outline-offset: 1px; /* moves outline a bit outside the border */
+}
+.input-container input {
+  width: 100%;
+  padding: var(--spacing-xs);
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.order-search-btn{
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  cursor: pointer;
 }
