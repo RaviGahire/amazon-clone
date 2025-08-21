@@ -540,3 +540,29 @@ a {
   background-color: var(--accent-hover);
   border-radius: 2px; /* smooth edges */
 }
+
+/* Orders History */
+.orders-history {
+  margin-top: var(--spacing-sm);
+}
+.orders-history label{
+font-family: var(--font-family);
+font-size: var(--font-small);
+}
+.orders-history select{
+font-family: var(--font-family);
+font-size: var(--font-small);
+padding: var(--spacing-xs);
+border-radius: var(--border-radius);
+background-color: var(--modal-bg);
+color: var(--white-color);
+cursor: pointer;
+}
+
+.orders-history-para{
+margin-top: var(--spacing-lg);
+text-align: center;
+font-family: var(--font-family);
+font-size: var(--font-small);
+}
+

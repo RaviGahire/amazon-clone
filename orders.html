@@ -285,8 +285,242 @@
             </div>
             &nbsp;
             <hr>
+            <!-- Orders history -->
+            <form method="get" action="/your-orders/orders" class="orders-history">
+                <label for="time-filter"><span class="num-orders">0 orders</span> placed in</label>
+                <span class="a-dropdown-container">
+                    <select name="timeFilter" autocomplete="off" id="time-filter" tabindex="0"
+                        class="a-native-dropdown">
 
-            
+                        <option data-ref="d30" value="last30">
+                            last 30 days
+                        </option>
+
+                        <option data-ref="m3" value="months-3" selected="">
+                            past 3 months
+                        </option>
+
+                        <option data-ref="y2025" value="year-2025">
+                            2025
+                        </option>
+
+                        <option data-ref="y2024" value="year-2024">
+                            2024
+                        </option>
+
+                        <option data-ref="y2023" value="year-2023">
+                            2023
+                        </option>
+
+                        <option data-ref="y2022" value="year-2022">
+                            2022
+                        </option>
+
+                        <option data-ref="y2021" value="year-2021">
+                            2021
+                        </option>
+
+                        <option data-ref="y2020" value="year-2020">
+                            2020
+                        </option>
+
+                        <option data-ref="y2019" value="year-2019">
+                            2019
+                        </option>
+
+                        <option data-ref="y2018" value="year-2018">
+                            2018
+                        </option>
+
+                        <option data-ref="y2017" value="year-2017">
+                            2017
+                        </option>
+
+                        <option data-ref="y2016" value="year-2016">
+                            2016
+                        </option>
+
+                        <option data-ref="y2015" value="year-2015">
+                            2015
+                        </option>
+
+                    </select>
+
+            </form>
+
+            <p class="orders-history-para">Looks like you have not placed an order in the last 30 days.<a
+                    class="a-link-normal" href="/">View orders in past 3 months</a></p>
+
+            <div test-id="grid-layout" data-csa-c-type="item" data-csa-c-item-type="asin" data-csa-c-owner="azkaban"
+                data-csa-c-posx="1"
+                style="display:grid;height:100%;width:100%;font-size:100%;box-sizing:border-box;position:relative;grid-template-areas:&quot; Logo Image BuyBox&quot;;grid-template-rows:100%;grid-template-columns:25% 25% 50%">
+                <div style="width:100%;height:100%;grid-area:Logo">
+                    <div style="width:100%;height:100%">
+                        <picture>
+                            <source
+                                srcset="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/ca1f84c9-c64f-455c-97ed-eadf4b1e3a0d._CR996,1145,2471,2242_AC_PT0_BL0_SX364_SY180_FMwebp_PQ70_.png"
+                                type="image/webp">
+                            <source
+                                srcset="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/ca1f84c9-c64f-455c-97ed-eadf4b1e3a0d._CR996,1145,2471,2242_AC_PT0_BL0_SX364_SY180_FMavif_PQ70_.png"
+                                type="image/avif">
+                            <source
+                                srcset="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/ca1f84c9-c64f-455c-97ed-eadf4b1e3a0d._CR996,1145,2471,2242_AC_PT0_BL0_SX364_SY180_FMjpg_PQ70_.png"
+                                type="image/jpg"><img loading="eager" alt="Brand logo"
+                                style="width:100%;height:100%;object-fit:contain;object-position:center;transform:var(--_18454ub0);transform-origin:var(--_18454ub1);--_18454ub0:scale(0.8)"
+                                src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/ca1f84c9-c64f-455c-97ed-eadf4b1e3a0d._CR996,1145,2471,2242_AC_PT0_BL0_SX364_SY180_.png">
+                        </picture>
+                        <div></div>
+                    </div>
+                </div>
+                <div style="width:100%;height:100%;grid-area:Image">
+                    <div
+                        style="transform:var(--pt4ymu0);--pt4ymu0:scale(0.82);position:relative;width:100%;height:100%">
+                        <picture>
+                            <source
+                                srcset="https://m.media-amazon.com/images/I/718HzJbvY1L._AC_PT0_BL0_SX364_SY180_FMwebp_PQ70_.jpg"
+                                type="image/webp">
+                            <source
+                                srcset="https://m.media-amazon.com/images/I/718HzJbvY1L._AC_PT0_BL0_SX364_SY180_FMavif_PQ70_.jpg"
+                                type="image/avif">
+                            <source
+                                srcset="https://m.media-amazon.com/images/I/718HzJbvY1L._AC_PT0_BL0_SX364_SY180_FMjpg_PQ70_.jpg"
+                                type="image/jpg"><img loading="eager" alt="Product image"
+                                style="width:100%;height:100%;object-fit:scale-down;object-position:center;box-sizing:border-box;padding:2px;transform:var(--pt4ymu1);--pt4ymu1:scale(90%);position:relative;z-index:-10"
+                                src="https://m.media-amazon.com/images/I/718HzJbvY1L._AC_PT0_BL0_SX364_SY180_.jpg">
+                        </picture>
+                        <div
+                            style="width:100%;height:100%;background-color:#0F111108;border-radius:4px;position:absolute;top:0;left:0">
+                        </div>
+                    </div>
+                </div>
+                <div style="width:100%;height:100%;grid-area:BuyBox">
+                    <div id="dynamic-bb" lang="en"
+                        style="display: grid; height: 100%; width: 100%; visibility: var(--_1mmj4tg0); --_1mmj4tg0: visible;">
+                        <div
+                            style="box-sizing: border-box; width: 100%; height: 100%; display: grid; justify-items: end; align-content: center; row-gap: 4px; padding: 8px 16px; grid-template-columns: 50% 50%;">
+                            <div
+                                style="display: grid; flex-direction: column; justify-content: space-between; align-items: start; gap: 2px; grid-area: 1 / 1 / auto / span 1;">
+                                <div data-testid="product-description"
+                                    style="color: rgb(15, 17, 17); overflow: hidden; text-align: var(--_1g2mm5f0); font-size: 0.875rem; line-height: 1.25rem; --_1g2mm5f1: 1; --_1g2mm5f0: start; width: 200%; text-overflow: ellipsis; white-space: nowrap;">
+                                    Redmi A4 5G (Starry Black, 4GB RAM, 128GB Storage) | Global Debut SD 4s Gen 2 |
+                                    Segment Largest 6.88in 120Hz | 50MP Dual Camera | 18W Fast Charging</div>
+                                <div
+                                    style="color: rgb(86, 89, 89); display: flex; flex-flow: wrap; overflow: hidden; width: 100%; justify-content: var(--ry2ze80); font-size: 0.875rem; line-height: 0.9375rem; --ry2ze80: start;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" focusable="false"
+                                        aria-hidden="true" viewBox="0 0 19 19" width="0.9375rem" height="0.9375rem"
+                                        shape-rendering="geometricPrecision">
+                                        <path
+                                            d="M9.5,1.325L12.104,6.581L17.922,7.423L13.711,11.511L14.706,17.286L9.5,14.56L4.293,17.286L5.288,11.511L1.077,7.423L6.895,6.581L9.5,1.325Z"
+                                            style="fill: url(&quot;#_starGradient_5pm7gjqod&quot;);"></path>
+                                        <path
+                                            d="M9.5,1.325L12.104,6.581L17.922,7.423L13.711,11.511L14.706,17.286L9.5,14.56L4.293,17.286L5.288,11.511L1.077,7.423L6.895,6.581L9.5,1.325Z"
+                                            style="fill: none; stroke: rgb(162, 106, 0); stroke-width: 1;"></path>
+                                        <defs>
+                                            <linearGradient id="_starGradient_5pm7gjqod" x1="0" y1="0" x2="1" y2="0"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="matrix(7.07124e-16,11.5482,-11.5482,7.07124e-16,9.4995,5.53952)">
+                                                <stop offset="0" style="stop-color: rgb(255, 206, 0); stop-opacity: 1;">
+                                                </stop>
+                                                <stop offset="1" style="stop-color: rgb(255, 167, 0); stop-opacity: 1;">
+                                                </stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1" focusable="false"
+                                        aria-hidden="true" viewBox="0 0 19 19" width="0.9375rem" height="0.9375rem"
+                                        shape-rendering="geometricPrecision">
+                                        <path
+                                            d="M9.5,1.325L12.104,6.581L17.922,7.423L13.711,11.511L14.706,17.286L9.5,14.56L4.293,17.286L5.288,11.511L1.077,7.423L6.895,6.581L9.5,1.325Z"
+                                            style="fill: url(&quot;#_starGradient_5pm7gjqod&quot;);"></path>
+                                        <path
+                                            d="M9.5,1.325L12.104,6.581L17.922,7.423L13.711,11.511L14.706,17.286L9.5,14.56L4.293,17.286L5.288,11.511L1.077,7.423L6.895,6.581L9.5,1.325Z"
+                                            style="fill: none; stroke: rgb(162, 106, 0); stroke-width: 1;"></path>
+                                        <defs>
+                                            <linearGradient id="_starGradient_5pm7gjqod" x1="0" y1="0" x2="1" y2="0"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="matrix(7.07124e-16,11.5482,-11.5482,7.07124e-16,9.4995,5.53952)">
+                                                <stop offset="0" style="stop-color: rgb(255, 206, 0); stop-opacity: 1;">
+                                                </stop>
+                                                <stop offset="1" style="stop-color: rgb(255, 167, 0); stop-opacity: 1;">
+                                                </stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1" focusable="false"
+                                        aria-hidden="true" viewBox="0 0 19 19" width="0.9375rem" height="0.9375rem"
+                                        shape-rendering="geometricPrecision">
+                                        <path
+                                            d="M9.5,1.325L12.104,6.581L17.922,7.423L13.711,11.511L14.706,17.286L9.5,14.56L4.293,17.286L5.288,11.511L1.077,7.423L6.895,6.581L9.5,1.325Z"
+                                            style="fill: url(&quot;#_starGradient_5pm7gjqod&quot;);"></path>
+                                        <path
+                                            d="M9.5,1.325L12.104,6.581L17.922,7.423L13.711,11.511L14.706,17.286L9.5,14.56L4.293,17.286L5.288,11.511L1.077,7.423L6.895,6.581L9.5,1.325Z"
+                                            style="fill: none; stroke: rgb(162, 106, 0); stroke-width: 1;"></path>
+                                        <defs>
+                                            <linearGradient id="_starGradient_5pm7gjqod" x1="0" y1="0" x2="1" y2="0"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="matrix(7.07124e-16,11.5482,-11.5482,7.07124e-16,9.4995,5.53952)">
+                                                <stop offset="0" style="stop-color: rgb(255, 206, 0); stop-opacity: 1;">
+                                                </stop>
+                                                <stop offset="1" style="stop-color: rgb(255, 167, 0); stop-opacity: 1;">
+                                                </stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1" focusable="false"
+                                        aria-hidden="true" viewBox="0 0 19 19" width="0.9375rem" height="0.9375rem"
+                                        shape-rendering="geometricPrecision">
+                                        <path
+                                            d="M9.5,1.325L12.104,6.581L17.922,7.423L13.711,11.511L14.706,17.286L9.5,14.56L4.293,17.286L5.288,11.511L1.077,7.423L6.895,6.581L9.5,1.325Z"
+                                            style="fill: url(&quot;#_starGradient_5pm7gjqod&quot;);"></path>
+                                        <path
+                                            d="M9.5,1.325L12.104,6.581L17.922,7.423L13.711,11.511L14.706,17.286L9.5,14.56L4.293,17.286L5.288,11.511L1.077,7.423L6.895,6.581L9.5,1.325Z"
+                                            style="fill: none; stroke: rgb(162, 106, 0); stroke-width: 1;"></path>
+                                        <defs>
+                                            <linearGradient id="_starGradient_5pm7gjqod" x1="0" y1="0" x2="1" y2="0"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="matrix(7.07124e-16,11.5482,-11.5482,7.07124e-16,9.4995,5.53952)">
+                                                <stop offset="0" style="stop-color: rgb(255, 206, 0); stop-opacity: 1;">
+                                                </stop>
+                                                <stop offset="1" style="stop-color: rgb(255, 167, 0); stop-opacity: 1;">
+                                                </stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" version="1.1" focusable="false"
+                                        aria-hidden="true" viewBox="0 0 19 19" width="0.9375rem" height="0.9375rem"
+                                        shape-rendering="geometricPrecision">
+                                        <path
+                                            d="M9.5,1.325L12.104,6.581L17.922,7.423L13.711,11.511L14.706,17.286L9.5,14.56L4.293,17.286L5.288,11.511L1.077,7.423L6.895,6.581L9.5,1.325Z"
+                                            style="fill: white;"></path>
+                                        <path
+                                            d="M9.5,1.325L12.104,6.581L17.922,7.423L13.711,11.511L14.706,17.286L9.5,14.56L4.293,17.286L5.288,11.511L1.077,7.423L6.895,6.581L9.5,1.325Z"
+                                            style="fill: none; stroke: rgb(162, 106, 0); stroke-width: 1;"></path>
+                                        <defs>
+                                            <linearGradient id="_starGradient_5pm7gjqod" x1="0" y1="0" x2="1" y2="0"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="matrix(7.07124e-16,11.5482,-11.5482,7.07124e-16,9.4995,5.53952)">
+                                                <stop offset="0" style="stop-color: rgb(255, 206, 0); stop-opacity: 1;">
+                                                </stop>
+                                                <stop offset="1" style="stop-color: rgb(255, 167, 0); stop-opacity: 1;">
+                                                </stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <div
+                                        style="color: rgb(86, 89, 89); overflow: hidden; padding-left: 4px; text-align: var(--ry2ze80); margin-top: 1px; font-size: 0.875rem; line-height: 0.9375rem; --ry2ze80: start;">
+                                        5,859 </div>
+                                </div>
+                                <div data-testid="deal-badge" data-acei-id="deal"
+                                    style="display: flex; flex-flow: wrap; align-items: center; gap: 6px 4px; border-radius: 2px; font-family: &quot;Amazon Ember&quot;; justify-content: start; text-align: start; font-size: 0.6875rem;">
+                                    <div
+                                        style="background-color: rgb(204, 12, 57); line-height: 16px; border-radius: inherit; display: flex; justify-content: center; align-items: center; font-weight: 700; white-space: nowrap; height: 20px; padding: 0px 6px;">
+                                        <span style="color: rgb(255, 255, 255);">27% off</span></div>
+                                    <div
+                                        style="background-color: rgb(255, 255, 255); line-height: 0.8125rem; border-radius: 2px; display: inline-block; font-weight: 700;">
+                                        <span style="color: rgb(204, 12, 57);">Limited time deal</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
