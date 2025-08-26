@@ -566,3 +566,63 @@ font-family: var(--font-family);
 font-size: var(--font-small);
 }
 
+/* Footer */
+.amazon-footer {
+  background-color: #232f3e;
+  color: #fff;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+}
+
+.footer-back-to-top {
+  background-color: #37475a;
+  text-align: center;
+  padding: 12px;
+}
+
+.footer-back-to-top a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 10%;
+  border-bottom: 1px solid #3a4553;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0;
+}
+
+.footer-column ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer-logo img {
+  width: 100px;
+  margin-bottom: 10px;
+}
