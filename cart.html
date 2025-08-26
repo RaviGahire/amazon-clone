@@ -7,7 +7,226 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+     <header class="header">
+        <!-- Top Header -->
+        <div class="header-top">
+            <!-- Logo -->
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="assets/logo/Amazon white logo.svg" alt="Amazon Logo">
+                </a>
+            </div>
+
+            <!-- Delivery Location -->
+            <div class="header-location">
+                <div class="location-icon"><img src="./assets/icons/basil_location-outline.svg" alt="location"></div>
+                <div class="location-details">
+                    <span class="small-text">Deliver to Ravi</span>
+                    <span class="bold-text">Pune 411028</span>
+
+                </div>
+                <img src="./assets/icons/arrow-down-white.svg" alt="select-location-arrow">
+            </div>
+            <div class="address-modal">
+                <div class="modal-header">
+                    <h2>Choose your location</h2>
+                    <img class="modal-close-btn" width="24px" src="./assets/icons/carbon_close-icon-white.svg"
+                        alt="close-icon">
+                </div>
+                <div class="modal-body">
+                    <p>Select a delivery location to see product availability and delivery options</p>
+                    <address>
+                        <span class="person-name"><b>Ravi Gahire</b></span>
+                        <p>Pilane Complex Falt No 2
+                            Hadapsar
+                            Pune, MAHARASHTRA 411028</p>
+                        <br>
+                        <span class="address-status"><b></b></span>
+                    </address>
+                    <address>
+                        <span class="person-name"><b>Ravi Gahire</b></span>
+                        <p>Pilane Complex Falt No 2
+                            Hadapsar
+                            Pune, MAHARASHTRA 411028</p>
+                        <br>
+                        <span class="address-status"><b></b></span>
+                    </address>
+                    <address>
+                        <span class="person-name"><b>Ravi Gahire</b></span>
+                        <p>Pilane Complex Falt No 2
+                            Hadapsar
+                            Pune, MAHARASHTRA 411028</p>
+                        <br>
+                        <span class="address-status"><b></b></span>
+                    </address>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Add an address or pick-up point</a>
+
+                    <div class="footer-lines"><span class="modal-line"></span><span>or enter an Indian
+                            pincode</span><span class="modal-line"></span></div>
+
+                    <div class="footer-pincode"> <input class="pincode-input" type="number"> <button
+                            class="apply-btn">Apply</button></div>
+
+                </div>
+            </div>
+            <!-- Search Bar -->
+            <div class="header-search">
+                <select class="search-category">
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Books</option>
+                    <option>Computers</option>
+                    <option>Mobiles</option>
+                </select>
+                <input type="text" placeholder="Search Amazon Clone">
+                <button class="search-btn">
+                    <img width="20px" src="./assets/icons/flowbite_search-outline.svg" alt="Search">
+                </button>
+            </div>
+
+            <!-- Account Language -->
+            <div class="header-language">
+                <img width="20px" src="./assets/icons/ion_language-outline.svg" alt="language-icon" title="Language">
+                <div class="language-container">
+                    <div class="language-modal">
+                        <div class="languages">
+                            <div class="checkbox">
+                                <input type="radio" name="language" value="Hindi">
+                                <label>Hindi – हिन्दी</label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" name="language" value="Bengali">
+                                <span>Bengali – বাংলা</span>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" name="language" value="Tamil">
+                                <span>Tamil – தமிழ்</span>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" name="language" value="Telugu">
+                                <span>Telugu – తెలుగు</span>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" name="language" value="Marathi">
+                                <span>Marathi – मराठी</span>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" name="language" value="Gujarati">
+                                <span>Gujarati – ગુજરાતી</span>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" name="language" value="Kannada">
+                                <span>Kannada – ಕನ್ನಡ</span>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" name="language" value="Malayalam">
+                                <span>Malayalam – മലയാളം</span>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" name="language" value="Odia">
+                                <span>Odia – ଓଡ଼ିଆ</span>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" name="language" value="Punjabi">
+                                <span>Punjabi – ਪੰਜਾਬੀ</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Account & Lists -->
+            <div class="header-account">
+                <img width="20px" src="./assets/icons/ph_user-thin.svg" alt="user-icon" title="Account">
+                <div class="account-container">
+                    <div class="account-modal">
+                        <div class="modal-title">
+                            <p>Who is shopping? Select a profile</p>
+                            <div class="manage-profile">
+                                <a href="#">Manage profile</a><img height="20px"
+                                    src="./assets/icons/weui_arrow-outlined.svg" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="account-modal-body">
+                            <div class="modal-left-side">
+                                <h2>Your Lists</h2>
+                                <p>Shopping List</p>
+                                <br>
+                                <hr>
+
+                                <ul>
+                                    <li>Create a Wish List</li>
+                                    <li>Wish from Any Website</li>
+                                    <li>baby Wishlist</li>
+                                    <li>Discover Your Style</li>
+                                    <li>Explore Showroom</li>
+                                </ul>
+                            </div>
+                            <div class="modal-right-side">
+                                <h2>Your Account</h2>
+                                <p>Switch Account</p>
+                                <br>
+                                <p>Sing Out</p>
+                                <br>
+                                <hr>
+                                <ul>
+                                    <li>Create a Wish List</li>
+                                    <li>Wish from Any Website</li>
+                                    <li>baby Wishlist</li>
+                                    <li>Discover Your Style</li>
+                                    <li>Explore Showroom</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orders -->
+            <div class="header-orders">
+                <a href="/orders.html"><img width="20px" src="./assets/icons/carbon_ibm-watson-orders.svg"
+                        alt="orders-icon" title="Orders"></a>
+            </div>
+
+            <!-- Cart -->
+            <div class="header-cart">
+                <a href="/cart.html">
+                    <img width="20px" src="./assets/icons/mdi-light_cart.svg" alt="cart-icon" title="Cart">
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Header / Navigation -->
+        <nav class="header-bottom">
+            <!-- Hamburger Menu Button -->
+            <img class="nav-toggle-btn" src="./assets/icons/Menu Button.svg" width="30px" alt="menu-icon">
+            <ul class="nav-links">
+                <img class="nav-close-btn" width="20px" src="./assets/icons/carbon_close-icon-white.svg"
+                    alt="close-icon">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Today's Deals</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Bestsellers</a></li>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">New Release</a></li>
+                <li><a href="#">Computer</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <!--  You might also like product carousel  -->
@@ -42,5 +261,61 @@
   </div>
 </section>
 
+   <footer class="amazon-footer">
+  <!-- Back to Top -->
+  <div class="footer-back-to-top">
+    <a href="#">Back to top</a>
+  </div>
+
+  <!-- Footer links -->
+  <div class="footer-links">
+    <div class="footer-column">
+      <h3>Get to Know Us</h3>
+      <ul>
+        <li><a href="#">About Amazon</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press Releases</a></li>
+        <li><a href="#">Amazon Science</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Connect with Us</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Make Money with Us</h3>
+      <ul>
+        <li><a href="#">Sell on Amazon</a></li>
+        <li><a href="#">Affiliate Program</a></li>
+        <li><a href="#">Advertise Your Products</a></li>
+        <li><a href="#">Amazon Pay</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Let Us Help You</h3>
+      <ul>
+        <li><a href="#">COVID-19 and Amazon</a></li>
+        <li><a href="#">Your Account</a></li>
+        <li><a href="#">Returns Centre</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer bottom -->
+  <div class="footer-bottom">
+    <div class="footer-logo">
+      <img src="assets/logo/Amazon white logo.svg" alt="Amazon Logo">
+    </div>
+    <p>© 2025 Amazon Clone by Ravi. All rights reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
