@@ -128,16 +128,16 @@ body {
   width: 100%;
   max-width: 1500px;
   height: 100vh;
-  border: 1px solid var(--accent-hover);
   margin: auto;
+    z-index: 0;
 }
-.carousel {
+.banner-carousel {
   position: relative;
   overflow: hidden;
+  /* z-index: -1; */
 }
-.carousel-track {
+.banner-carousel-track {
   display: flex;
-  
   transition: transform 0.5s ease-in-out;
 }
 .carousel-slide {
@@ -155,10 +155,9 @@ body {
   background-repeat: no-repeat;
 }
 .slide2 {
-  background: url("/assets/images/carousel-1.jpg");
+  background: url("/assets/images/carousel\ -2.jpg");
   background-position: center;
   background-repeat: no-repeat;
-
 }
 .slide3 {
   background: url("/assets/images/carousel-3.jpg");
@@ -189,8 +188,8 @@ body {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
+  padding: var(--spacing-sm);
+
 }
 .btn.prev {
   left: 10px;
