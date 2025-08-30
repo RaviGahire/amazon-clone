@@ -64,7 +64,7 @@ function showSlide(i){
 nextBtn.addEventListener("click", () => showSlide(index + 1));
 prevBtn.addEventListener("click", () => showSlide(index - 1));
 
-
+setInterval(() => showSlide(index + 1), 4000);
 
 
 // fetch('https://dummyjson.com/products')
