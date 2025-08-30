@@ -1,0 +1,7 @@
+.banner-product-card{
+    position: relative;
+    background: var(--accent-color);
+    max-width: 350px;
+    min-height: 420px;
+    bottom: 450px;
+}
