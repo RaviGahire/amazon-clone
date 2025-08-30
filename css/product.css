@@ -1,8 +1,62 @@
+:root {
+  --primary-color: #131921; /* Amazon dark navy header */
+  --secondary-color: #232f3e; /* Secondary navbar */
+  --accent-color: #febd69; /* Amazon yellow */
+  --accent-hover: #f3a847; /* Hover yellow */
+  --background-color: #e3e6e6; /* Page background */
+  --modal-bg: #6b7280;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --text-color: #111111;
+  --link-color: #2162a1; /* Amazon link color */
+  --link-hover: #c7511f; /* Link hover color */
+  /* Buttons */
+  --btn-bg: var(--accent-color);
+  --btn-hover-bg: var(--accent-hover);
+  --btn-text-color: var(--black-color);
+
+  /* Border & Shadow */
+  --border-radius: 4px;
+  --shadow-light: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  /* Font */
+  --font-family: "Amazon Ember", Arial, sans-serif;
+  --font-small: 0.85rem;
+  --font-extra-small: 12px;
+  --font-base: 1rem;
+  --font-large: 1.2rem;
+
+  /* Spacing */
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 48px;
+
+  /* Timing & Ease */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+
+  /* Common transitions */
+  --transition-color: color var(--transition-fast);
+  --transition-bg: background-color var(--transition-fast);
+  --transition-border: border-color var(--transition-fast);
+  --transition-transform: transform var(--transition-normal);
+  --transition-shadow: box-shadow var(--transition-normal);
+  --transition-opacity: opacity var(--transition-normal);
+}
+
 .product-grid {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 1rem;
+  gap: var(--spacing-sm);
+  font-family: var(--font-family);
 }
 
 .banner-product-card {
@@ -12,11 +66,27 @@
   min-height: 420px;
   bottom: 450px;
 }
+.banner-card-header {
+  padding: var(--spacing-sm);
+}
+.banner-card-header h2 {
+  font-size: var(--font-large);
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  color: var(--secondary-color);
+
+
+
+}
 .banner-card-body {
   display: flex;
   flex-wrap: wrap;
   row-gap: var(--spacing-md);
   justify-content: space-around;
+}
+.product-name {
+  font-size: var(--font-extra-small);
 }
 .product-images {
   max-width: 145px;
@@ -24,4 +94,11 @@
 .a-amazon-image {
   width: 100%;
   margin-inline: var(--spacing-xxs);
+}
+.banner-card-footer{
+ padding: var(--spacing-sm);
+}
+.a-see-more-linkes{
+   font-size: var(--font-extra-small);
+   color: var(--link-color);
 }
