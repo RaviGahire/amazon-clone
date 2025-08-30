@@ -129,7 +129,7 @@ body {
   max-width: 1500px;
   height: 100vh;
   margin: auto;
-    z-index: 0;
+    /* z-index: 0; */
 }
 .banner-carousel {
   position: relative;
@@ -146,12 +146,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
+  /* background-size: cover; */
   background-position: center;
 }
 .slide1 {
   background: url("/assets/images/carousel-1.jpg");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .slide2 {
@@ -162,21 +163,25 @@ body {
 .slide3 {
   background: url("/assets/images/carousel-3.jpg");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .slide4 {
   background: url("/assets/images/carousel-4.jpg");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .slide5 {
   background: url("/assets/images/carousel-5.jpg");
-  background-position: center;
+   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .slide6 {
   background: url("/assets/images/carousel-6.jpg");
-  background-position: center;
+   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .btn {
