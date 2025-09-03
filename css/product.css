@@ -125,14 +125,15 @@
 }
 /* Products */
 .product-container {
-  position: absolute;
+  position: relative;
+  margin-top: -400px;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
   flex-wrap: wrap;
-  gap: var(--spacing-sm);
   font-family: var(--font-family);
-  bottom: -50px;
-
+  top: 0;
 }
 
 .banner-product-card {
