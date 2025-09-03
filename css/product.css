@@ -50,21 +50,95 @@
   --transition-shadow: box-shadow var(--transition-normal);
   --transition-opacity: opacity var(--transition-normal);
 }
-
-.product-grid {
+/* banners carousel    */
+.banner-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+.banner-carousel {
+  position: relative;
+  overflow: hidden;
+}
+.banner-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-slide {
+  min-width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide1 {
+  background: url("/assets/images/carousel-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide2 {
+  background: url("/assets/images/carousel\ -2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slide3 {
+  background: url("/assets/images/carousel-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide4 {
+  background: url("/assets/images/carousel-4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide5 {
+  background: url("/assets/images/carousel-5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide6 {
+  background: url("/assets/images/carousel-6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  background: var(--modal-bg);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: var(--spacing-sm);
+}
+.btn.prev {
+  left: 10px;
+}
+.btn.next {
+  right: 10px;
+}
+/* Products */
+.product-container {
+  position: absolute;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
   font-family: var(--font-family);
+  bottom: -50px;
+
 }
 
 .banner-product-card {
-  position: relative;
   background-color: #fff;
   max-width: 350px;
   min-height: 420px;
-  bottom: 450px;
 }
 .banner-card-header {
   padding: var(--spacing-sm);
@@ -73,11 +147,8 @@
   font-size: var(--font-large);
   font-weight: 700;
   font-style: normal;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
   color: var(--secondary-color);
-
-
-
 }
 .banner-card-body {
   display: flex;
@@ -95,10 +166,10 @@
   width: 100%;
   margin-inline: var(--spacing-xxs);
 }
-.banner-card-footer{
- padding: var(--spacing-sm);
+.banner-card-footer {
+  padding: var(--spacing-sm);
 }
-.a-see-more-linkes{
-   font-size: var(--font-extra-small);
-   color: var(--link-color);
+.a-see-more-linkes {
+  font-size: var(--font-extra-small);
+  color: var(--link-color);
 }
