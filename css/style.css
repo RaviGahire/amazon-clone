@@ -288,7 +288,7 @@ body {
 .language-modal {
   position: absolute;
   top: 60px;
-  right: 40px;
+  right: 120px;
   background-color: var(--modal-bg);
   padding: var(--spacing-md);
   border-radius: var(--border-radius);
