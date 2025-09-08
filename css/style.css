@@ -125,7 +125,6 @@ body {
   flex-direction: column;
 }
 
-
 /* Address Modal */
 .address-modal {
   position: fixed;
@@ -812,7 +811,8 @@ a {
 
 /* You might also like product carousel */
 .recommendation-carousel {
-  margin: 40px 0;
+  max-width: 1500px;
+  margin: 40px auto;
   padding: 20px;
   background: #fff;
   font-family: "Amazon Ember", Arial, sans-serif;
@@ -837,10 +837,6 @@ a {
   scroll-behavior: smooth;
   gap: 15px;
   padding: 10px;
-}
-
-.carousel-track::-webkit-scrollbar {
-  display: none; /* Hide scrollbar */
 }
 
 .product-card {
